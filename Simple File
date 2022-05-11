@@ -1,0 +1,18 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+	int main(){
+		
+		ofstream out("test");
+		
+		if ( ! out ){
+			cout << "Cannot open File ";
+			return 1;
+		}
+		
+		out << 100 << " " << 123.12 << "a";
+		
+		out.close();
+		
+		return 0;
+	}
